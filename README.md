@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images\FireShot_PricingToggle_Desktop.png)
-![](./images\FireShot_PricingToggle_Mobile.png)
+![](./images/FireShot_PricingToggle_Desktop.png)
+![](./images/FireShot_PricingToggle_Mobile.png)
 
 ### Links
 
