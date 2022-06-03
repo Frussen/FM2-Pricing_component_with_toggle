@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  
+  <title>Frontend Mentor | Pricing component with toggle</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hideOverflowTop">
+      <img src="images/bg-top.svg" alt="bg-top">
+    </div>
+    <h1>Our Pricing</h1>
+  
+    <p class="option">Annually</p>
+    <input type="checkbox" id="cb">
+    <label for="cb" class="switch"></label>
+    <p class="option">Monthly</p>
+  
+
+    <div class="flex-container">
+      <div class="card">
+        <h2>Basic</h2>
+        <h3 class="mprice"><span>&dollar;</span>19.99</h3>
+        <h3 class="yprice"><span>&dollar;</span>199.99</h3>
+        <p class="feature first">500 GB Storage</p>
+        <p class="feature">2 Users Allowed</p>
+        <p class="feature">Send up to 3 GB</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card blue">
+        <h2>Professional</h2>
+        <h3 class="mprice"><span>&dollar;</span>24.99</h3>
+        <h3 class="yprice"><span>&dollar;</span>249.99</h3>
+        <p class="feature first">1 TB Storage</p>
+        <p class="feature">5 Users Allowed</p>
+        <p class="feature">Send up to 10 GB</p>
+        <a href="#">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>Master</h2>
+        <h3 class="mprice"><span>&dollar;</span>39.99</h3>
+        <h3 class="yprice"><span>&dollar;</span>399.99</h3>
+        <p class="feature first">2 TB Storage</p>
+        <p class="feature">10 Users Allowed</p>
+        <p class="feature">Send up to 20 GB</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+    
+
+    <div class="hideOverflowBottom">
+      <img src="images/bg-bottom.svg" alt="bg-bottom">
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Frussen">Frussen</a>.
+  </div>
+
+  <script src="app\js\script.js"></script>
+</body>
+</html>

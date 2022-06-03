@@ -1,0 +1,98 @@
+.container {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 0 0 70px;
+}
+
+.hideOverflowTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  overflow-x: hidden;
+
+  img {
+    position: relative;
+    top: -37px;
+    right: -196px;
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 66px 0 38px;
+  text-align: center;
+  color: $grayishBlue;
+}
+
+.option {
+  display: inline-block;
+  margin: 0 19px 87px;
+  color: $lightGrayishBlue;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 56px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: $linearGradient;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.4s;
+  }
+}
+
+input { 
+  position: absolute;
+  left: -10000px;
+}
+  
+input:checked ~ .switch:after {
+  transform: translateX(24px);
+}
+
+input:checked ~ .flex-container .card h3.mprice {
+  display: table;
+}
+
+input:checked ~ .flex-container .card h3.yprice {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .hideOverflowTop {
+    img {
+      top: 0px;
+      right: 0px;
+    }
+  }
+    
+  h1 {
+    margin: 0;
+    padding: 73px 0 39px;
+  }
+
+  .option {
+    margin: 0 19px 73px;
+  }
+}

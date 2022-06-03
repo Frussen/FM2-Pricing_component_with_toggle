@@ -1,0 +1,155 @@
+.card {
+  display: block;
+  margin: 0 24px 29px;
+  padding-bottom: 30px;
+  border-radius: 9px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);
+  color: $grayishBlue;
+
+  h2 {
+    margin: 0;
+    padding: 34px 0 15px;
+    font-size: 17px;
+  }
+
+  h3 {
+    display: table;
+    margin: 0 auto 20.4px;
+    padding: 0;
+    font-size: 70px;
+    color: $darkGrayishBlue;
+
+    &.mprice {
+      display: none;
+    }
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 38px;
+      padding-right: 5px;
+    }
+  }
+
+  .feature {
+    position: relative;
+    margin: 0;
+    padding: 18px;
+
+    &.first {
+      &::before {
+        position: absolute;
+        top: 0px;
+        left: 8.87%;
+        content: "";
+        display: block;
+        height: 1px;
+        width: 82.26%;
+        background-color: $lightGrayishBlue;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0px;
+      left: 8.87%;
+      content: "";
+      display: block;
+      height: 1px;
+      width: 82.26%;
+      background-color: $lightGrayishBlue;
+    }
+  }
+
+  a {
+    display: block;
+    width: 82.26%;
+    margin: 31px auto 0;
+    padding: 12.25px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: $linearGradient;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      border: 1px solid $darkBlue;
+      background: white;
+      color: $darkBlue;
+    }
+  }
+}
+
+.blue {
+  background: $angledGradient;
+  color: white;
+
+  h3 {
+    color: white;
+  }
+
+  a {
+    background: white;
+    color: $darkBlue;
+
+    &:hover {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+    }
+  }
+}
+
+.hideOverflowBottom {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  img {
+    display: block;
+    position: relative;
+    top: 67px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+    align-items: center;
+    margin: 0 195px 103px;
+
+    .card {
+      flex: 1 0 30%;
+      margin: 0;
+    }
+
+    .blue {
+      padding-bottom: 52.4px;
+
+      h2 {
+        padding-top: 57px;
+      }
+      
+      .feature {
+        padding-bottom: 17px;
+      }
+    }
+  }
+
+  .hideOverflowBottom {
+    bottom: -103px;
+    left: 0;
+
+    img {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
