@@ -281,8 +281,7 @@ input:checked ~ .flex-container .card h3.yprice {
     left: 0;
   }
   .hideOverflowBottom img {
-    bottom: 0;
-    left: 0;
+    top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
